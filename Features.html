@@ -1,0 +1,185 @@
+<!-- trending-features.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Features - Cars</title>
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.trending-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.feature-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    margin-top: 0;
+}
+
+.feature-card p {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar li {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #ccc;
+}
+
+.nav-link.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+section h1 {
+    margin-top: 0;
+}
+    </style></head>
+<body>
+    <nav class="nav-bar">
+        <ul>
+            
+            <li><a href="vinay bhai.html" class="nav-link">Home</a></li>
+            <li><a href="Features.html" class="nav-link">Features</a></li>
+            <li><a href="Price.html" class="nav-link">Price</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <br>
+    <header>
+        <h1>Trending Features</h1>
+    </header>
+    <main>
+        <section class="trending-features">
+            <h2>Most Popular Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Wi-Fi Connectivity</h3>
+                    <p>Stay connected on the go with Wi-Fi connectivity.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-camera"></i>
+                    <h3>Rearview Camera</h3>
+                    <p>Enhance your safety with a rearview camera.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bluetooth"></i>
+                    <h3>Bluetooth Connectivity</h3>
+                    <p>Stream music and make hands-free calls with Bluetooth connectivity.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-sun"></i>
+                    <h3>Sunroof</h3>
+                    <p>Let in some natural light with a sunroof.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Keyless Entry</h3>
+                    <p>Unlock your car with ease using keyless entry.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Car Repairs</p>
+    </footer>
+    <script>
+        //features.js
+document.addEventListener("DOMContentLoaded", function() {
+    const featureCards = document.querySelectorAll(".feature-card");
+    featureCards.forEach(function(featureCard) {
+        featureCard.addEventListener("click", function() {
+            this.classList.toggle("active");
+        });
+    });
+});
+    </script>
+</body>
+</html>

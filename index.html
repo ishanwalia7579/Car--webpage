@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+.container {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+}
+
+header {
+    background-image: url("https://i.postimg.cc/s2633DVn/car-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: calc(100vh - 102px);
+}
+
+.content {
+    font-size: 2rem;
+    margin: auto;
+    max-width: 100%;
+}
+
+.content h1 {
+    color: #00c2ff;
+    margin-bottom: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #00c2ff;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer strong {
+    color: #00c2ff;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        margin: 2rem auto 0;
+        font-size: 1.4rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    nav .highlight {
+        display: none;
+    }
+
+    footer ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer li {
+        margin: 1rem;
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <title>Automotive Car</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" link rel="stylesheet" href="style.css" />
+        
+    </head>
+    <body>
+      <header>
+        <nav class="container">  
+            <div class="logo">
+                <i class="fas fa-car"></i> 
+            </div>
+            <ul>
+                <li><a href="#" class="selected">Home</a></li>
+                <li><a href="Features.html">Features</a></li>
+                <li><a href="Price.html">Price</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="highlight">Book Appointment</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="container">
+            <h1>Your Car Repairs</h1>
+            <p>Visit us for your service</p>
+            <a class="highlight" href="#">Book Appointment</a>
+        </div>
+        </div>
+        </header>
+
+        <footer>
+            <ul class="container">
+                <li>
+                    <strong>Our Location</strong>
+                    <p>Himachal pradesh (Indian)</p>
+                </li>
+                <li>
+                    <strong>Phone</strong>
+                    <p>+91 8219645597</p>
+                </li>
+                <li>
+                    <strong>Email</strong>
+                    <p>vinayrajput280@gmail.com</p>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</body>
+</html>
